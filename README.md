@@ -154,8 +154,17 @@ Possible improvements include:
 
 * Testing advanced models such as XGBoost and LightGBM
 * Building a real-time fraud detection pipeline
-* Deploying the model using a web API
 * Adding automated monitoring for model drift
+
+---
+
+## Why No Web Deployment?
+
+The dataset features (V1–V28) are PCA-transformed components used to anonymize sensitive financial data. 
+
+Since these features do not correspond to interpretable real-world variables, a practical user interface cannot be built where users manually input transaction information.
+
+Therefore, this project focuses on building and evaluating a robust fraud detection model rather than deploying a web application.
 
 ---
 
